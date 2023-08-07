@@ -43,10 +43,8 @@ public class Food {
 	@JoinColumn(name = "us_id")
 	private User user;
 
-//    @Column(name = "us_id")
-//    private int usID;
-    @OneToMany(mappedBy = "fdID")
-    private Set<Image> ListImage;
+    // @OneToMany(mappedBy = "fdID")
+    // private Set<Image> ListImage;
 
     @OneToMany(mappedBy = "fdId")
     private Set<BookTable> listBookTable;
