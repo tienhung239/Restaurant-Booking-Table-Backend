@@ -38,6 +38,11 @@ public class Food {
     @JoinColumn(name = "cf_id")
     private Category cfID;
 
+    	
+	@ManyToOne
+	@JoinColumn(name = "us_id")
+	private User user;
+
 //    @Column(name = "us_id")
 //    private int usID;
     @OneToMany(mappedBy = "fdID")
